@@ -1,0 +1,32 @@
+{
+  // VsCode 自带配置
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.formatDocument": true, //保存后自动格式化代码
+    "source.fixAll.stylelint": true, //自动修复StyleLint
+    "source.fixAll.eslint": true //自动修复EsLint
+  },
+  // TailwindCSS 配置 为了配合 unocss使用
+  "tailwindCSS.lint.invalidApply": "ignore",
+  "tailwindCSS.lint.invalidTailwindDirective": "ignore",
+  "tailwindCSS.lint.invalidScreen": "ignore",
+  "tailwindCSS.lint.invalidVariant": "ignore",
+  "tailwindCSS.lint.recommendedVariantOrder": "ignore",
+  // StyleLint
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "sass",
+    "scss",
+    "vue"
+  ],
+  "stylelint.snippet": [
+    "css",
+    "postcss",
+    "sass",
+    "scss"
+  ],
+}

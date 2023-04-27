@@ -1,0 +1,23 @@
+/**
+ * @name TsConfig
+ * @desc The instant on-demand atomic CSS engine.
+ * @link https://ezdoc.cn/docs/nuxtjs/concepts/typescript
+*/
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "pinia",
+      "@pinia/nuxt",
+      "@vueuse/nuxt"
+    ]
+  },
+  "exclude": [
+    ".output",
+    ".vscode",
+    "public",
+    "assets",
+    "dist",
+    "content"
+  ]
+}

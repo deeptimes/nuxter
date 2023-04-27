@@ -1,2 +1,1 @@
-# nuxter
-nuxt starter
+# Readme

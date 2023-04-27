@@ -1,0 +1,14 @@
+body {
+  @apply bg-white text-black;
+}
+
+i {
+  @apply inline-block;
+}
+
+.dark {
+
+  body {
+    @apply bg-black text-white;
+  }
+}

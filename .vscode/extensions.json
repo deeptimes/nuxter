@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "antfu.unocss",
+    "bradlc.vscode-tailwindcss",
+    "vue.vscode-typescript-vue-plugin",
+    "vue.volar",
+    "matijao.vue-nuxt-snippets"
+  ]
+}

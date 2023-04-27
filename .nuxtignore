@@ -1,0 +1,33 @@
+# 在构建阶段，您可以使用.nuxtignore文件让Nuxt忽略项目根目录(rootDir)中的(layout, pages, components,composables,middleware)目录和文件。
+# 该文件受 与 `.gitignore`和 `.eslintignore` 相同的规范的约束
+# 其中每行都是一个 glob 模式，指示应忽略哪些文件。
+
+app/_ignore/*.ts
+app/*-ignore.ts
+
+components/_ignore/*.vue
+components/*-ignore.vue
+
+composables/_ignore/*.ts
+composables/*-ignore.vue
+
+content/_ignore/*.ts
+content/*-ignore.vue
+
+layouts/_ignore/*.vue
+layouts/*-ignore.vue
+
+middleware/_ignore/*.ts
+middleware/*-ignore.ts
+
+pages/_ignore/*.vue
+pages/*-ignore.vue
+
+plugins/_ignore/*.ts
+plugins/*-ignore.ts
+
+server/_ignore/*.ts
+server/*-ignore.ts
+
+types/_ignore/*.ts
+types/*-ignore.ts
