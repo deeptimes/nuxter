@@ -1,17 +1,16 @@
 {
-  "name": "Nuxter",
+  "name": "nuxter",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm",
   "description": "Nuxt Starter",
-  "author": "DeepTime <deeptime@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev -p 3721",
-    "ssg": "nuxt generate",
+    "build": "nuxi build",
+    "dev": "nuxi dev -p 3721 --dotenv .env.local",
+    "ssg": "nuxi generate",
     "prepare": "nuxi prepare",
-    "preview": "nuxt preview"
+    "preview": "nuxi preview"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.5",
