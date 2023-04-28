@@ -19,6 +19,7 @@ const menus = ref([
           </NuxtLink>
         </div>
         <div class="btns ml-4">
+          <Langs />
           <button type="button" title="prference" @click="toggleDark">
             <i class="i-ri-sun-fill" dark="i-ri-moon-fill" />
           </button>

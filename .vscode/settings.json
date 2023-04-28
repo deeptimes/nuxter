@@ -4,11 +4,11 @@
   "less.validate": false,
   "scss.validate": false,
   "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.formatDocument": true, //保存后自动格式化代码
-    "source.fixAll.stylelint": true, //自动修复StyleLint
-    "source.fixAll.eslint": true //自动修复EsLint
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.formatDocument": true, //保存后自动格式化代码
+  //   "source.fixAll.stylelint": true, //自动修复StyleLint
+  //   "source.fixAll.eslint": true //自动修复EsLint
+  // },
   // TailwindCSS 配置 为了配合 unocss使用
   "tailwindCSS.lint.invalidApply": "ignore",
   "tailwindCSS.lint.invalidTailwindDirective": "ignore",

@@ -28,7 +28,7 @@ definePageMeta({ title: '' })
               DEMO
             </NuxtLink>
             <NuxtLink to="https://github.com/deeptimes/nuxter" class="btn rounded-lg bg-violet-600 px-6 py-2">
-              Github
+              {{ $t('welcome') }}
             </NuxtLink>
           </div>
         </div>

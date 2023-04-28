@@ -9,7 +9,7 @@ definePageMeta({
   <div id="page" class="page">
     <section class="md:(py-8)">
       <div class="mx-auto container">
-        <h1>Error Page</h1>
+        <h1>The Page</h1>
       </div>
     </section>
   </div>
