@@ -1,0 +1,14 @@
+{
+  "layouts": {
+    "title": "Page - {title}"
+  },
+  "pages": {
+    "title": {
+      "top": "Top",
+      "about": "About this site"
+    }
+  },
+  "welcome": "Welcome",
+  "hello": "Hello {name} !",
+  "tag": "<p>Tag</p>"
+}

@@ -1,6 +1,6 @@
-import zh from '~/locales/zh.json'
-import en from '~/locales/en.json'
-import fr from '~/locales/fr.json'
+import zh from '~/langs/zh.json'
+import en from '~/langs/en.json'
+import fr from '~/langs/fr.json'
 
 export default defineI18nConfig(nuxt => ({
   legacy: false,
@@ -12,6 +12,7 @@ export default defineI18nConfig(nuxt => ({
     fr,
   },
   modifiers: {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     snakeCase: (str: string) => str.split(' ').join('-'),
   },
