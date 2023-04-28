@@ -1,0 +1,66 @@
+<template>
+  <div class="blocks warn">
+    <h6 v-if="$slots.head">
+      <ContentSlot :use="$slots.head" unwrap="p" />
+    </h6>
+    <ContentSlot :use="$slots.body ? $slots.body : $slots.default" />
+  </div>
+</template>
+
+<style lang="scss" scoped>
+// .warn {
+//   @apply bg-amber-50 bg-opacity-50 border-amber-300 border-opacity-50;
+
+//   :deep(h6), :deep(p):first-child strong:first-child, :deep(a) {
+//     @apply text-amber-800 text-opacity-70 font-bold;
+//   }
+
+//   :deep(span), :deep(code), :deep(strong), :deep(em) {
+//     @apply text-amber-800 text-opacity-60;
+//   }
+
+//   :deep(code) {
+//     @apply bg-amber-200 bg-opacity-40;
+//   }
+
+//   :deep(a) {
+//     @apply border-amber-500 border-opacity-50;
+
+//     &:hover {
+//       @apply text-amber-500 text-opacity-40;
+//     }
+//   }
+
+//   :deep(p) {
+//     @apply text-amber-900 text-opacity-50;
+//   }
+// }
+
+// .dark .warn {
+//   @apply bg-orange-500 bg-opacity-3 border-orange-400 border-opacity-30;
+
+//   :deep(h6), :deep(p):first-child strong:first-child, :deep(a) {
+//     @apply text-orange-400 text-opacity-80;
+//   }
+
+//   :deep(span), :deep(code), :deep(strong), :deep(em) {
+//     @apply text-orange-200 text-opacity-80;
+//   }
+
+//   :deep(code) {
+//     @apply bg-orange-500 bg-opacity-10;
+//   }
+
+//   :deep(a) {
+//     @apply border-orange-300 border-opacity-50;
+
+//     &:hover {
+//       @apply text-orange-500 text-opacity-40;
+//     }
+//   }
+
+//   :deep(p) {
+//     @apply text-orange-200 text-opacity-60;
+//   }
+// }
+</style>

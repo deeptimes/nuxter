@@ -1,0 +1,350 @@
+/* Reset */
+
+.prose {
+  @apply max-w-full relative leading-7;
+
+  /* 超链接：Link */
+
+  a {
+    @apply border-b border-dashed px-1 text-indigo-800 text-opacity-80 pb-0.5;
+
+    &:hover {
+      @apply text-indigo-600 text-opacity-50 border-none;
+    }
+  }
+
+  small {
+    @apply font-roboto_cond tracking-tight;
+  }
+
+  strong {
+    @apply px-1;
+  }
+
+  p:not(:last-child) {
+    @apply mb-4;
+  }
+
+  hr {
+    @apply my-4;
+  }
+
+  video,
+  img {
+    @apply rounded-lg mb-2 overflow-hidden;
+  }
+
+  /* 标题：Header */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-zinc-700 font-bold;
+  }
+
+  h1 {
+    @apply text-32px border-b w-full pb-3 inline-block;
+
+    small {
+      @apply opacity-50;
+    }
+  }
+
+  h2 {
+    @apply mt-4 mb-4 text-28px pt-8;
+  }
+
+  h3 {
+    @apply mt-4 mb-3 text-24px;
+  }
+
+  h4 {
+    @apply mt-4 mb-2 text-20px;
+  }
+
+  h5 {
+    @apply mt-4 mb-1 text-16px;
+  }
+
+  h6 {
+    @apply mt-2 mb-1 text-15px;
+  }
+
+  /* 引用：Blockquote */
+
+  blockquote {
+    @apply bg-white rounded-lg border-l-2px border-l-zinc-200 py-3 px-8 not-italic mt-2 mb-4;
+
+    p {
+      @apply opacity-75 text-14px mb-0;
+    }
+  }
+
+  /* 列表：Ul.Ol.Li */
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  li::marker {
+    @apply text-gray-500;
+  }
+
+  ul,
+  ol {
+    @apply list-outside mb-4 ml-4;
+
+    >li {
+      @apply mb-3;
+
+      ul,
+      ol {
+        @apply my-2 ml-4 text-15px leading-6;
+
+        >li {
+          @apply mb-2 opacity-80;
+
+          ul,
+          ol {
+            @apply my-1 ml-4 text-15px leading-5;
+
+            >li {
+              @apply mb-1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Table */
+
+  table {
+    @apply border-collapse my-6 block overflow-x-auto;
+
+    tr {
+      @apply border-t-1px border-light-900;
+    }
+
+    tr:nth-child(2n) {
+      @apply bg-light-400;
+    }
+
+    th,
+    td {
+      @apply border-1px border-light-900 py-4 px-3;
+    }
+
+    th {
+      @apply font-bold bg-light-700 text-16px;
+    }
+  }
+
+  /* Code */
+
+  code {
+    @apply bg-light-700 rounded-4px px-2 py-1 mx-1;
+  }
+
+  :not(pre, h2, h3, h4, h5, a)>code {
+    @apply text-14px;
+  }
+
+  pre {
+    @apply overflow-x-scroll leading-6;
+
+    code {
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      tab-size: 2;
+      hyphens: none;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+
+      // .line {
+      //   @apply leading-6 block;
+      // }
+    }
+  }
+
+  /* Code Group */
+
+  .code-group {
+    @apply rounded-lg mb-4 overflow-hidden;
+
+    .tabs-header {
+      @apply select-none bg-light-700;
+
+      .tabs {
+        @apply relative;
+
+        button {
+          @apply py-3 px-4 z-1 relative;
+
+          &.active {
+            // @apply bg-white;
+          }
+
+          &.not-active {
+
+            &:hover {
+              @apply bg-light-600;
+            }
+          }
+        }
+      }
+
+      .highlight-underline {
+        @apply h-full top-0 z-0 absolute;
+
+        .tab {
+          @apply flex h-full bg-white w-full;
+        }
+      }
+    }
+
+    .code-group-content {
+      @apply bg-white bg-opacity-50;
+    }
+
+    .codes {
+      @apply rounded-t-none;
+    }
+  }
+}
+
+/* 
+*
+*
+*
+ In Dark prefers-color-scheme
+*
+*
+*
+*/
+
+.dark .prose {
+
+  a {
+    @apply border-b-dark-purple-bright text-dark-purple-bright pb-2px;
+  }
+
+  strong {
+    @apply text-zinc-100;
+  }
+
+  em {
+    @apply text-gray-500;
+  }
+
+  h1,
+  h2 {
+    @apply border-zinc-700;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-zinc-200;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  code {
+    @apply bg-dark-900 bg-opacity-30 text-zinc-400;
+  }
+
+  // :not(pre,h2,h3,h4,h5) > code {
+  //   @apply bg-dark-900 bg-opacity-60;
+  // }
+
+
+
+  .code-group {
+
+    .tabs-header {
+      @apply bg-dark-500;
+
+      .tabs {
+
+        button {
+
+          &.not-active {
+
+            &:hover {
+              @apply bg-dark-50;
+            }
+          }
+
+          &.active {
+            // @apply bg-dark-600;
+          }
+        }
+
+        .highlight-underline {
+
+          .tab {
+            @apply bg-dark-700;
+          }
+        }
+      }
+    }
+
+    .code-group-content {
+      @apply bg-black bg-opacity-50;
+    }
+
+    .codes {
+      @apply rounded-t-none;
+    }
+  }
+
+  table {
+
+    tr {
+
+      &:nth-child(2n) {
+        @apply bg-dark-200;
+      }
+
+      &:hover {
+        @apply bg-dark-400 bg-opacity-50;
+      }
+    }
+
+    th,
+    td {
+      @apply border-zinc-800;
+    }
+
+    th {
+      @apply bg-dark-400;
+    }
+  }
+
+  /* 引用：Blockquote */
+
+  blockquote {
+    @apply bg-dark-600 border-l-dark-50;
+  }
+
+}

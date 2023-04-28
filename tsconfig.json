@@ -9,7 +9,8 @@
     "types": [
       "pinia",
       "@pinia/nuxt",
-      "@vueuse/nuxt"
+      "@vueuse/nuxt",
+      "@nuxt/content"
     ]
   },
   "exclude": [

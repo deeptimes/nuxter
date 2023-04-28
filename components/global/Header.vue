@@ -7,7 +7,7 @@ const menus = ref([
 </script>
 
 <template>
-  <header class="w-full bg-white" un-dark="bg-zinc-900">
+  <header class="w-full bg-white" dark="bg-zinc-900">
     <div class="mx-auto flex items-center justify-between container">
       <div class="logo pt-2">
         <i class="i-icon-logo w-24" />

@@ -29,16 +29,26 @@ export default defineNuxtConfig({
 
   css: [
     '@unocss/reset/tailwind.css',
+    'styles/prose.scss',
     'styles/main.scss',
   ],
 
   modules: [
     '@nuxtjs/color-mode',
+    '@nuxt/content',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
   ],
+
+  content: {
+    markdown: { toc: { depth: 2, searchDepth: 3 } },
+    highlight: {
+      theme: { default: 'one-dark-pro', dark: 'one-dark-pro' },
+      preload: ['ts', 'js', 'css', 'html', 'vue', 'scss', 'bash', 'json', 'md', 'yaml', 'python'],
+    },
+  },
 
   runtimeConfig: {
     apiSecret: '',

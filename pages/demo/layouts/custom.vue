@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-const { locale } = useI18n()
+const { data } = await useAsyncData<any>('custom-layout', () => queryContent('/demo/layouts/custom').findOne())
 
 // PageMeta
 definePageMeta({
-  title: '',
+  title: '自定义布局演示',
   layout: 'demo-custom',
 })
 </script>
@@ -12,18 +12,11 @@ definePageMeta({
   <div id="page" class="page">
     <section class="md:(py-8)">
       <div class="mx-auto container">
-        <h1>The Page</h1>
-        <form>
-          <select v-model="locale">
-            <option value="en">
-              en
-            </option>
-            <option value="zh">
-              zh
-            </option>
-          </select>
-          <p>{{ $t('welcome') }}</p>
-        </form>
+        <div class="prose">
+          <ContentRenderer :value="data">
+            <ContentRendererMarkdown :value="data" />
+          </ContentRenderer>
+        </div>
       </div>
     </section>
   </div>

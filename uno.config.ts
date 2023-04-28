@@ -9,7 +9,6 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
@@ -31,7 +30,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetTypography(),
+    // presetTypography(),
     presetWebFonts(),
     presetIcons({
       scale: 1.2,
@@ -53,5 +52,5 @@ export default defineConfig({
     transformerDirectives({ enforce: 'pre' }),
     transformerVariantGroup(),
   ],
-  safelist: 'prose prose-sm m-auto text-left mt-2 '.split(' '),
+  safelist: 'prose prose-sm m-auto text-left mt-2 gap-8'.split(' '),
 })
