@@ -1,0 +1,54 @@
+{
+  "name": "@deeptimes/nuxter",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "site": {
+    "homepage": "https://nuxter.cn",
+    "title": "网站名称",
+    "slogan": "Nuxt项目模版",
+    "keywords": "nuxt",
+    "icps": "粤ICP备15031517号"
+  },
+  "description": "",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deployer": "nuxt-deployer"
+  },
+  "dependencies": {
+    "@deeptimes/fapro": "^0.6.1",
+    "@fontsource/roboto": "^5.1.0",
+    "@nuxtjs/device": "3.2.4",
+    "@primevue/themes": "^4.2.5",
+    "@vee-validate/nuxt": "^4.14.7",
+    "@vee-validate/rules": "^4.14.7",
+    "canvas-confetti": "^1.9.3",
+    "nuxt": "^3.14.1592",
+    "pinia-plugin-persistedstate": "^4.1.3",
+    "primevue": "^4.2.5",
+    "vee-validate": "^4.14.7",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.0",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@pinia/nuxt": "^0.7.0",
+    "@primevue/nuxt-module": "^4.2.5",
+    "@types/canvas-confetti": "^1.6.4",
+    "@types/node": "^22.10.2",
+    "@unocss/eslint-config": "^0.64.1",
+    "@unocss/nuxt": "^0.64.1",
+    "@vueuse/core": "^12.0.0",
+    "@vueuse/nuxt": "^12.0.0",
+    "eslint": "^9.17.0",
+    "pinia": "^2.3.0",
+    "sass-embedded": "^1.83.0",
+    "typescript": "^5.7.2"
+  }
+}

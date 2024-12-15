@@ -1,0 +1,30 @@
+@mixin code {
+  code {
+    @apply pb-4 font-mono text-15px;
+  }
+
+  :not(pre)>code {
+    @apply rounded-md border border-dashed px-2 py-1px mx-1 text-14px font-roboto;
+
+    .light & {
+      @apply bg-light-50 text-light-700;
+    }
+
+    .dark & {
+      @apply bg-dark-500/30 text-dark-200;
+    }
+  }
+
+  pre {
+    @apply overflow-x-scroll leading-6;
+
+    code {
+      white-space: pre;
+      word-spacing: normal;
+      word-break: normal;
+      word-wrap: normal;
+      tab-size: 2;
+      hyphens: none;
+    }
+  }
+}

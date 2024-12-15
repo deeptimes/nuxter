@@ -1,0 +1,63 @@
+@mixin head{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold relative items-center flex;
+
+    code {
+      @apply leading-1.4em text-0.7em font-normal ml-2;
+    }
+
+    span {
+      &:first-of-type {
+        @apply absolute top-0 left-0;
+      }
+    }
+
+    a {
+      @apply px-1 pb-0;
+    }
+
+    &:hover {
+      a {
+        @apply opacity-100;
+      }
+    }
+  }
+
+  h1 {
+    @apply text-32px w-full pb-3 inline-block;
+
+    small {
+      @apply opacity-50;
+    }
+  }
+
+  h2 {
+    @apply pt-0 mb-4 text-28px;
+
+    &:not(:nth-of-type(1)) {
+      @apply border-t border-dashed pt-8 mt-8;
+    }
+  }
+
+  h3 {
+    @apply pt-8 mb-4 text-24px;
+    
+  }
+
+  h4 {
+    @apply pt-8 mb-2 text-20px;
+  }
+
+  h5 {
+    @apply pt-6 mb-1 text-16px;
+  }
+
+  h6 {
+    @apply pt-4 mb-1 text-15px;
+  }
+}

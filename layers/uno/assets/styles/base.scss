@@ -1,0 +1,48 @@
+/* Global */
+// @layer ezo-reset,primevue,ezo-base,icons,shortcuts,default;
+
+@layer ezo-base {
+  :root {
+    font-size: 16px;
+    // font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --shiki-dark-bg: none;
+  }
+
+  html {
+    @apply tracking-wide h-full;
+
+    &.scroll-lock {
+      @apply fixed overflow-y-scroll w-full;
+      top: var(--window-scroll-top);
+    }
+  }
+
+  body {}
+
+  a {
+    @apply transition-colors duration-200 cursor-pointer;
+
+    &:hover {
+      @apply text-brand-accent;
+    }
+  }
+
+  mark {
+    @apply bg-inherit text-inherit;
+  }
+
+  ins {
+    @apply no-underline;
+  }
+
+  i {
+    @apply inline-block;
+  }
+
+  .screen {
+    height: calc(100vh - 114px);
+  }
+}

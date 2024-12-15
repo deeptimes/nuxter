@@ -1,0 +1,21 @@
+@mixin link {
+  a {
+    @apply underline mx-1 pb-0.5 underline-offset-0.35em underline-1px;
+
+    .light & {
+      @apply text-brand-light underline-brand-light;
+
+      &:hover {
+        @apply underline-brand-light/40 text-light-900;
+      }
+    }
+
+    .dark & {
+      @apply text-brand-dark underline-brand-dark;
+
+      &:hover {
+        @apply underline-brand-dark/40 text-dark-50;
+      }
+    }
+  }
+}

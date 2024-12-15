@@ -1,0 +1,9 @@
+telemetry.enabled=false
+
+devtools.enabled=false
+devtools.timeline.enabled=false
+
+sourcemap.server=false
+sourcemap.client=false
+
+

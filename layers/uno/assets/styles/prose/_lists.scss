@@ -1,0 +1,40 @@
+@mixin lists {
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li::marker {
+    @apply text-zinc-500;
+  }
+
+  ul,
+  ol {
+    @apply list-outside mb-4 ml-4;
+
+    > li {
+      @apply mb-3;
+
+      ul,
+      ol {
+        @apply my-2 ml-4 text-15px leading-6;
+
+        > li {
+          @apply mb-2 opacity-90;
+
+          ul,
+          ol {
+            @apply my-1 ml-4 text-15px leading-5;
+
+            > li {
+              @apply mb-1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

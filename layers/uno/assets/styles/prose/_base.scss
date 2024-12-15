@@ -1,0 +1,39 @@
+@mixin base {
+  small {
+    @apply tracking-tight;
+  }
+
+  summary {
+    @apply list-none;
+  }
+
+  strong {
+    @apply px-1;
+  }
+
+  em {}
+
+  hr {
+    @apply my-4;
+  }
+
+  video,
+  img {
+    @apply rounded-lg mb-2 overflow-hidden;
+  }
+
+  blockquote {
+    @apply border-l-4 rounded-r-lg italic py-3 px-8 mt-2 mb-4;
+
+    p {
+      @apply text-14px italic leading-6;
+    }
+  }
+
+  p{
+    @apply text-15px leading-6;
+  }
+  p:not(:last-child) {
+    @apply mb-3;
+  }
+}

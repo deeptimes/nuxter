@@ -1,0 +1,23 @@
+@use './prose/base';
+@use './prose/lists';
+@use './prose/table';
+@use './prose/code';
+@use './prose/head';
+@use './prose/link';
+
+@layer ezo-prose {
+
+  .prose {
+    @apply max-w-full grow relative px-8 py-2 overflow-x-hidden;
+    @include base.base;
+    @include lists.lists;
+    @include table.table;
+    @include code.code;
+    @include head.head;
+    @include link.link;
+
+    .heading {
+      // @apply pt-70px -mt-70px;
+    }
+  }
+}

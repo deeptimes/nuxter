@@ -1,0 +1,66 @@
+@mixin table {
+  table {
+    @apply border-collapse my-6 table w-full overflow-x-auto rounded-xl border border-dashed;
+
+    .light & {
+      @apply bg-light-100/50;
+    }
+
+    .dark & {
+      @apply bg-dark-700;
+    }
+
+    th {
+      @apply font-bold border-b;
+
+      .light & {
+        @apply bg-light-200;
+      }
+
+      .dark & {
+        @apply bg-dark-800;
+      }
+    }
+
+    th,
+    td {
+      @apply py-2 px-3;
+
+      &:not(:last-child) {
+        @apply border-r;
+      }
+    }
+
+    tr {
+      @apply border-b border-dashed;
+
+      &:last-child {
+        @apply border-b-none;
+      }
+
+      &:nth-child(2n) {
+        .light & {
+          @apply bg-light-50/50;
+        }
+
+        .dark & {
+          @apply bg-dark-600/60;
+        }
+      }
+    }
+
+    tr,
+    td,
+    th {
+      @apply border-dashed;
+
+      .light & {
+        @apply border-light-300/50;
+      }
+
+      .dark & {
+        @apply border-dark-500/50;
+      }
+    }
+  }
+}
